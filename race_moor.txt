@@ -1,0 +1,36 @@
+type: moore
+start state: S1_Y2
+
+states:
+S10_Y1 | S10 / Y1
+S11_Y1 | S11 / Y1
+S12_Y1 | S12 / Y1
+S1_Y2 | S1 / Y2
+S2_Y2 | S2 / Y2
+S3_Y1 | S3 / Y1
+S4_Y2 | S4 / Y2
+S5_Y2 | S5 / Y2
+S6_Y1 | S6 / Y1
+S6_Y2 | S6 / Y2
+S7_Y2 | S7 / Y2
+S8_Y1 | S8 / Y1
+S8_Y2 | S8 / Y2
+S9_Y1 | S9 / Y1
+S9_Y2 | S9 / Y2
+
+transitions:
+S10_Y1 S1_Y2 X1
+S11_Y1 S5_Y2 X1
+S12_Y1 S2_Y2 X1
+S1_Y2 S10_Y1 X1
+S2_Y2 S12_Y1 X1
+S3_Y1 S5_Y2 X1
+S4_Y2 S7_Y2 X1
+S5_Y2 S3_Y1 X1
+S6_Y1 S7_Y2 X1
+S6_Y2 S7_Y2 X1
+S7_Y2 S3_Y1 X1
+S8_Y1 S10_Y1 X1
+S8_Y2 S10_Y1 X1
+S9_Y1 S7_Y2 X1
+S9_Y2 S7_Y2 X1

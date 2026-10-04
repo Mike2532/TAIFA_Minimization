@@ -6,7 +6,7 @@
 
 int main() {
     try {
-        std::ifstream input("../Input.txt");
+        std::ifstream input("../tests/N7_solutions/5_mealy_from_optimized_moor.txt");
         if (!input.is_open()) {
             throw std::runtime_error("Could not open file 'Input.txt'");
         }
@@ -20,7 +20,7 @@ int main() {
 
         if (line == "type: mealy") {
             minimizer = std::make_unique<MealyMinimizer>();
-        } else if (line == "type: moor") {
+        } else if (line == "type: moore") {
             minimizer = std::make_unique<MooreMinimizer>();
         } else {
             input.close();

@@ -1,0 +1,33 @@
+/Users/misaculkov/CLionProjects/TAIFA_Minimization/cmake-build-debug/TAIFA_Minimization
+type: mealy
+start: S0
+
+transitions:
+S1 S4 X1 / Y0
+S1 S1 X2 / Y1
+S1 S1 X3 / Y1
+S2 S4 X1 / Y0
+S2 S3 X2 / Y1
+S2 S2 X3 / Y1
+S3 S6 X1 / Y0
+S3 S3 X2 / Y1
+S3 S6 X3 / Y1
+S4 S1 X1 / Y1
+S4 S1 X2 / Y0
+S4 S6 X3 / Y0
+S5 S1 X1 / Y1
+S5 S2 X2 / Y0
+S5 S6 X3 / Y0
+S6 S2 X1 / Y1
+S6 S1 X2 / Y1
+S6 S5 X3 / Y0
+
+// Состав групп (Новое состояние <- Исходные состояния):
+// S1 <- S1, S4
+// S2 <- S6
+// S3 <- S9
+// S4 <- S2, S8
+// S5 <- S3
+// S6 <- S5, S7
+
+Process finished with exit code 0

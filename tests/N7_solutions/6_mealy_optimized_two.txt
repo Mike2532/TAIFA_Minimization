@@ -1,0 +1,13 @@
+type: mealy
+start: S2
+
+transitions:
+S1 S1 X1 / Y0
+S1 S1 X2 / Y0
+S1 S1 X3 / Y1
+S2 S3 X1 / Y1
+S2 S1 X2 / Y0
+S2 S2 X3 / Y0
+S3 S3 X1 / Y1
+S3 S2 X2 / Y0
+S3 S2 X3 / Y0
